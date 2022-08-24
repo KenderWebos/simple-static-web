@@ -1,0 +1,71 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.module{
+    background-color: gray;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.imagen_portada_noticia{
+    width: 100%;
+    
+}
+
+.green_advice{
+    padding: 20px;
+    border: 3px solid rgb(27, 172, 27);
+    background-color: rgb(192, 255, 97);
+    
+}
+
+.black_advice{
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(48, 48, 48);
+    
+}
+
+.main_nav{
+    color: white;
+    background-color: rgb(44, 44, 44);
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li{
+    margin: 20px;
+    padding: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(19, 19, 19);
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+ul li:hover{
+    border: 3px solid rgb(75, 75, 75);
+    background-color: white;
+    transition : 0.5s;
+}
+
+div{
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
