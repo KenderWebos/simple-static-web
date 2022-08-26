@@ -1,10 +1,15 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    background-color: rgb(80, 80, 80);
+    color: white;
 }
 
 .module{
-    background-color: gray;
+    border: 3px solid black;
+    border-radius: 8px;
+    padding: 30px;
+    background-color: rgb(65, 65, 65);
 }
 
 .red{
@@ -22,8 +27,9 @@ body{
 
 .green_advice{
     padding: 20px;
-    border: 3px solid rgb(27, 172, 27);
-    background-color: rgb(192, 255, 97);
+    border: 3px solid rgb(37, 134, 37);
+    border-radius: 8px;
+    background-color: rgb(96, 160, 0)
     
 }
 
@@ -46,10 +52,15 @@ ul{
 }
 
 ul li{
-    margin: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 3px solid rgb(75, 75, 75);
+    border-radius: 8px;
     padding: 10px;
-    border: 3px solid rgb(0, 0, 0);
-    background-color: rgb(19, 19, 19);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 ul li a{
@@ -57,15 +68,71 @@ ul li a{
     color: white;
 }
 
-ul li:hover{
-    border: 3px solid rgb(75, 75, 75);
+nav a img{
+    width: 50%;
     background-color: white;
-    transition : 0.5s;
 }
 
-div{
+ul li:hover{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.divplus{
     margin-left: 80px;
     margin-right: 80px;
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+
+
+.notification{
+    color: black;
+    margin: 50px;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    border-radius: 3px;
+}
+
+.notification img{
+    padding: 0px;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+.notification_person_name{
+}
+
+.notification_person_config{
+    display: flex;
+    margin: 20px;
+    display: inline-block;
+}
+
+.button{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.button input{
+    padding-top: 60px
 }
