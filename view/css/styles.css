@@ -63,9 +63,37 @@ ul li:hover{
     transition : 0.5s;
 }
 
+/* 
 div{
     margin-left: 80px;
     margin-right: 80px;
     margin-top: 40px;
     margin-bottom: 40px;
+}
+*/
+
+
+.notification{
+    margin: 50px;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    border-radius: 3px;
+}
+
+.notification img{
+    padding: 0px;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+.notification_person_name{
+}
+
+.notification_person_config{
+    display: flex;
+    margin: 20px;
+    display: inline-block;
 }
