@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(77, 77, 77);
+}
+
+.first_header{
+    padding: 20px;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    background-color: rgb(179, 179, 179);
+    height: 30px;
+}
+
+.first_header_1{
+    display:inline;
+}
+
+.first_header_1 img{
+    width: 25px;
+    opacity: 50%;
+}
+
+.first_header_2{
+    float: right;
+}
+
+.btn{
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 0px solid gray;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn_registrarme{
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    background-color: gray;
+
+    border: 0px solid gray;
+}
+
+.btn_iniciar_sesion{
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    background-color: #b5121c;
+    border: 0px solid gray;
+}
+
+.second_header{
+    
+    padding: 20px;
+    display: flex;
+    
+    background-color: white;
+
+}
+
+.second_header img{
+    width: 300px;
+}
+
+.second_header .btn{
+    margin: 8px;
+    padding: 10px;
+    color: #b5121c;
+}
+
+.second_header .btn_menu_ubicacion{
+    
+    margin: 8px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    float: left;
+    
+    background-color: black;
+    color: white;
+}
+
+.title{
+    padding: 40px;
+    box-shadow: 2px;
+    background-color: rgb(201, 201, 201);
+}
+
+.cartelera_semanal_items{
+    display: flex;
+}
+
+.cartelera_semanal_item{
+    margin: 25px;
+}
+
+.cartelera_semanal_item img{
+    width: 100px;
+    width: 16%;
+
+    width: 200px;
+}
+
+.red_advice{
+    padding: 0px;
+    margin: 0px;
+}
+
+.red_advice button{
+    border: 0px solid red;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: #b5121c;
+}
+
+.red_advice button:hover{
+    cursor: pointer;
+}
