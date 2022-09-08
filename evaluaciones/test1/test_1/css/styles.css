@@ -8,7 +8,7 @@
     padding: 20px;
     padding-bottom: 0px;
     padding-top: 5px;
-    background-color: rgb(179, 179, 179);
+    background-color: rgb(235 235 235);
     height: 30px;
 }
 
@@ -26,10 +26,14 @@
 }
 
 .btn{
+    font-weight: bold;
     padding: 5px;
     padding-left: 15px;
     padding-right: 15px;
     border: 0px solid gray;
+    color: black;
+
+    background-color: rgb(235 235 235);
 }
 
 .btn:hover{
@@ -58,9 +62,10 @@
 .second_header{
     
     padding: 20px;
-    display: flex;
-    
     background-color: white;
+
+    display: flex;
+    justify-content: space-between;
 
 }
 
@@ -72,6 +77,7 @@
     margin: 8px;
     padding: 10px;
     color: #b5121c;
+    background-color: white;
 }
 
 .second_header .btn_menu_ubicacion{
@@ -87,10 +93,14 @@
     color: white;
 }
 
+.menu button{
+    font-size: 20px;
+}
+
 .title{
     padding: 40px;
     box-shadow: 2px;
-    background-color: rgb(201, 201, 201);
+    background-color: rgb(235 235 235);
 }
 
 .cartelera_semanal_items{
@@ -102,10 +112,9 @@
 }
 
 .cartelera_semanal_item img{
-    width: 100px;
     width: 16%;
 
-    width: 200px;
+    width: 300px;
 }
 
 .red_advice{
@@ -124,4 +133,28 @@
 
 .red_advice button:hover{
     cursor: pointer;
+}
+
+.cartelera_semanal_title{
+    padding-left: 30px;
+}
+
+.cartelera_semanal_items{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.peliculas_clasificador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.peliculas_clasificador button{
+    padding: 10px;
+    border: 0px solid gray;
+    background-color: white;
+
+    width: 30%;
 }
