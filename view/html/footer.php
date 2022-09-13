@@ -1,6 +1,5 @@
 <footer class="footer_nav">
-    <p>Este es el footer</p>
-    <button> hola </button>
+    <p>Sitio web desarrollado para el curso de ingenieria de software de la ucsc </p>
 </footer>
 </body>
 </html>

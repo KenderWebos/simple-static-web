@@ -21,11 +21,5 @@
             <li><a href="index.php?p=new_">new_</a></li>
 
             <li><a href="index.php?p=js_testing">JS</a></li>
-
-
-            <li><a href="../index.php">Index</a></li>
-
-
-
         </ul>
     </nav>

@@ -23,16 +23,11 @@
     <!--div>
         <img class = "imagen_portada_noticia" src="view/images/main_notice.jpg" alt="imagen principal de la noticia">
     </div-->
-
     
     <center>
         <div class="module">
             <h2>Tarea n1</h2>
-    
-            <p>
-                Pagina de noticia y tiene como contenidos parrafos una imagen y un aviso.
-            </p>
-    
+            <p>Pagina de noticia y tiene como contenidos parrafos una imagen y un aviso.</p>
             <a class="button" href="view/html/tarea1.html">VER</a>
         </div>
     </center>
@@ -40,11 +35,7 @@
     <center>
         <div class="module">
             <h2>Tarea n2</h2>
-    
-            <p>
-                Tarjeta de notificacion, esta tarjeta tiene un avatar, un nombre, una descripcion y una fecha de publicacion.
-            </p>
-    
+            <p>Tarjeta de notificacion, esta tarjeta tiene un avatar, un nombre, una descripcion y una fecha de publicacion.</p>
             <a class="button" href="view/html/tarea2.html">VER</a>
         </div>
     </center>
