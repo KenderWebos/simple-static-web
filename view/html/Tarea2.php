@@ -9,11 +9,6 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <nav class = "main_nav">
-        <ul>
-            <li><a href="../../index.html">VOLVER</a></li>
-        </ul>
-    </nav>
     
     <div class="notification">
         <div class="notification_image">
@@ -35,8 +30,5 @@
     <div style = "display: block;">
         <div style="opacity: 0.5; height:50px; background-color: black"></div>
     </div>
-
-    <div style="display:inline-block; height:50px; width: 30%; background-color: blue"></div>
-    <div style="display:inline-block; height:50px; width: 30%; background-color: red"></div>
 </body>
 </html>

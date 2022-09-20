@@ -11,11 +11,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <nav class = "main_nav">
-        <ul>
-            <li><a href="../../index.html">VOLVER</a></li>
-        </ul>
-    </nav>
     
     <div class="reproductor">
 
@@ -33,7 +28,7 @@
         </div>
 
         <div class="album_image">
-            <img class="" src="../images/theStrokesAlbum.jpg" alt="imagen_del_album">
+            <img class="" src="../../../Ing_soft/view/images/theStrokesAlbum.jpg" alt="imagen_del_album">
         </div>
         
         <div class="reproductor_description">
@@ -41,7 +36,7 @@
             <p class = "notification_description">You Only Live Once</p>
         </div>
 
-        <div class="reproductor_state">
+        <!-- <div class="reproductor_state">
             
             <button class="reproductor_exit_button">
                 <span class="material-symbols-outlined">
@@ -51,7 +46,7 @@
             </button>
 
             <p> now playing </p>
-        </div>
+        </div> -->
 
         <div>
             <button class="reproductor_shuffle_button">

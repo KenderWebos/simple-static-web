@@ -12,6 +12,10 @@
     height: 30px;
 }
 
+.header_company_logo{
+    width: 200px;
+}
+
 .first_header_1{
     display:inline;
 }
