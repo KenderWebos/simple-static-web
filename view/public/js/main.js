@@ -32,3 +32,7 @@ function wspDirect(){
     }
     document.getElementById("wspDirectInput").value = "";
 }
+
+function helloWorld(){
+    alert("HelloWorld!!")
+}

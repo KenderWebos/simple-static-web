@@ -1,5 +1,6 @@
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+  <!-- dark light -->
   <div class="container-fluid">
     <!-- <img style="padding:10px;width:200px; height:100%" class="header_company_logo" src="../../../ing_soft/view/images/heritech/ht_logo.png" alt="heritech_main_logo"> -->
     <!-- <a class="navbar-brand" href="index.php?p=inicio"> HeriTech </a> -->
@@ -16,11 +17,13 @@
             Tareas
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="index.php?p=tarea1">Tarea1</a></li>
-            <li><a class="dropdown-item" href="index.php?p=tarea2">Tarea2</a></li>
-            <li><a class="dropdown-item" href="index.php?p=tarea3">Tarea3</a></li>
+            <li><a class="dropdown-item" href="index.php?p=Tarea1">Tarea1</a></li>
+            <li><a class="dropdown-item" href="index.php?p=Tarea2">Tarea2</a></li>
+            <li><a class="dropdown-item" href="index.php?p=Tarea3">Tarea3</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="index.php?p=js_testing">js</a></li>
+            <li><a class="dropdown-item" href="index.php?p=/modules/databases/index">databases</a></li>
+
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -29,9 +32,10 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             
-            <li><a class="dropdown-item" href="../../../ing_soft/evaluaciones/test1/test_1/index.html">CINEMARK</a></li>
-            <li><a class="dropdown-item" href="../../../ing_soft/view/html/modules/simplepage/index.php">INTERACCIONES</a></li>
-            <li><a class="dropdown-item" href="../../../ing_soft/view/html/modules/bootstrap/index.html">Bootstrap</a></li>
+            <li><a class="dropdown-item" href="evaluaciones/test1/test_1/index.html">CINEMARK</a></li>
+            <li><a class="dropdown-item" href="view/partials/modules/simplepage/index.php">INTERACCIONES</a></li>
+            <li><a class="dropdown-item" href="view/partials/modules/bootstrap/index.html">Bootstrap</a></li>
+            <li><a class="dropdown-item" href="evaluaciones/test2/index.html">Twitter</a></li>
 
           </ul>
         </li>
@@ -41,8 +45,8 @@
         </li>
       </ul>
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-dark" type="submit">Search</button>
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button onclick="helloWorld()" class="btn btn-outline-dark" type="submit">Buscar</button>
       </form>
     </div>
   </div>

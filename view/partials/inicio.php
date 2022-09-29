@@ -1,5 +1,4 @@
 <div class="divplus">
-
         <center>
             <h1>Taller de ingenieria de software</h1>
             <hr>
@@ -12,34 +11,16 @@
             <p>En este sitio web se pueden encontrar todas las tareas y evaluaciones del Taller de ingenieria de software 1 de la UCSC</p>
             <p>Autor: Kevin Campos V</p>
 
-            <img style="width:450px; border:8px solid black; border-radius: 20px ratio ratio-1x1" src="view/public/images/ucsc_edit.png" alt="some_web_dev_img">
-            <center>
+            <div class="parental_advisory">
+                <img style="width:450px; border:8px solid black; border-radius: 20px ratio ratio-1x1" src="view/public/images/ucsc_edit.png" alt="some_web_dev_img">
                 <img style="width:100px; position:absolute; top:36%; left:39%" src="view/public/images/explicit.jpg" alt="">
-            </center>
+            </div>
+            <!-- <a href="/images/myw3schoolsimage.jpg" download> -->
+            
             <br>
             <br>
             <br>
         </center>
+</div>
 
-
-    </div>
-
-    <!--div>
-        <img class = "imagen_portada_noticia" src="view/images/main_notice.jpg" alt="imagen principal de la noticia">
-    </div-->
     
-    <!-- <center>
-        <div class="module">
-            <h2>Tarea n1</h2>
-            <p>Pagina de noticia y tiene como contenidos parrafos una imagen y un aviso.</p>
-            <a class="button" href="view/html/tarea1.html">VER</a>
-        </div>
-    </center>
-
-    <center>
-        <div class="module">
-            <h2>Tarea n2</h2>
-            <p>Tarjeta de notificacion, esta tarjeta tiene un avatar, un nombre, una descripcion y una fecha de publicacion.</p>
-            <a class="button" href="view/html/tarea2.html">VER</a>
-        </div>
-    </center> -->
