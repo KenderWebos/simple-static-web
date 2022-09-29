@@ -9,13 +9,16 @@
 
     <div style = "display: block;">
         <center>
-            <div style="opacity: 0.5; height:500px; background-color: black">
+            <div style="height:500px; background-color: black; color:white">
                 
                 <br>
                 <p> > console </p>
                 <hr>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, earum architecto numquam repellendus ducimus soluta repudiandae accusamus illo neque sequi velit assumenda suscipit tenetur, quia distinctio impedit praesentium culpa recusandae quis provident similique dolores ab modi. Vitae enim, provident odio at, quibusdam iusto ipsam rem quas itaque quaerat error placeat. </p>
+                <p> Puedes hablar directamente con un numero de wsp sin tener que agregarlo. </p>
                 <hr>
+                <p style="display: inline">+569</p>
+                <input style="border-radius: 30px" id="wspDirectInput" type="text">
+                <button onclick="wspDirect()" type="button" class="btn btn-success"> Contactar </button>
             </div>
         </center>
     </div>

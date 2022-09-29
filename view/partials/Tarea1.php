@@ -17,7 +17,7 @@
     </div>
 
     <div class="divplus">
-        <img class = "imagen_portada_noticia" src="../../../Ing_soft/view/images/main_notice.jpg" alt="imagen principal de la noticia">
+        <img class = "imagen_portada_noticia" src="./public/images/main_notice.jpg" alt="imagen principal de la noticia">
     </div>
     
     <div class="green_advice">

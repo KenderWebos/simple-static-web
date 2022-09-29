@@ -28,7 +28,7 @@
         </div>
 
         <div class="album_image">
-            <img class="" src="../../../Ing_soft/view/images/theStrokesAlbum.jpg" alt="imagen_del_album">
+            <img class="" src="./public/images/theStrokesAlbum.jpg" alt="imagen_del_album">
         </div>
         
         <div class="reproductor_description">

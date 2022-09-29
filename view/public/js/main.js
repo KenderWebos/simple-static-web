@@ -1,16 +1,4 @@
-// console.log('Hello World');
-
-// alert('Hello World');
-
-index = 0;
-
-function saludar(name){
-    alert('Hello ' + name);
-}
-
-function holaMundo(){
-    alert('Hello World');
-}
+console.log("iniciando script {main.js}");
 
 function changeColor(){
 
@@ -33,10 +21,14 @@ function changeColor(){
     
 }
 
-function hideMenu(){
-    alert('Hide Menu');
-    // document.getElementsByClassName("menu").style.backgroundColor= 'blue';
-    document.getElementsByClassName("menu").style.display= 'none';
-
-
+function wspDirect(){
+    number = document.getElementById("wspDirectInput").value;
+    console.log(number)
+    if(number.length == 8){
+        window.open("https://web.whatsapp.com/send?phone=569"+ number +"&text=hola")
+    }
+    else{
+        alert("El numero debe tener 8 digitos");
+    }
+    document.getElementById("wspDirectInput").value = "";
 }
