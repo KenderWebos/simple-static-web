@@ -27,7 +27,7 @@ require("conexion.php");
         $resultado = mysqli_query($conexion, $consulta);
 
         echo "<center>";
-        echo "<table style='background-color:black;color:white; width:50%; height:250px'>";
+        echo "<table class='table table-striped table-hover' style='width:50%; height:250px'>";
         echo "<thead>
             <th> NOMBRE </th>
             <th> APELLIDO </th>
@@ -54,18 +54,21 @@ require("conexion.php");
                 ';
         }
         echo "</table>";
-        echo "</center>"
+        echo "</center>";
         
     ?>
-    <hr>
-    <form action="insert/insert_alumno.php" method="post">
-        <H1>AGREGAR ALUMNOS</H1>
-        <input name="nombre" type="text" placeholder="NOMBRE"><p></p>
-        <input name="apellido" type="text" placeholder="APELLIDO"><p></p>
-        <input name="edad" type="text" placeholder="EDAD"><p></p>
-        <input name="correo" type="text" placeholder="CORREO"><p></p>
-        <input type="submit" value="SAVE">
-    </form>
+    <!-- insert/insert_alumno.php -->
+    <center>
+        <hr>
+        <form action="view/partials/modules/databases/insert/insert_alumno.php" method="post">
+            <H1>AGREGAR ALUMNOS</H1>
+            <input name="nombre" type="text" placeholder="NOMBRE"><p></p>
+            <input name="apellido" type="text" placeholder="APELLIDO"><p></p>
+            <input name="edad" type="text" placeholder="EDAD"><p></p>
+            <input name="correo" type="text" placeholder="CORREO"><p></p>
+            <input class="btn btn-outline-dark" type="submit" value="SAVE">
+        </form>
+    </center>
 </body>
 </html>
 

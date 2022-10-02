@@ -1,5 +1,5 @@
 <?php
-    require('conexion.php');
+    require('../conexion.php');
 
     $nombre_consultado = $_POST["nombre"];
     $apellido_resultado = $_POST["apellido"];
@@ -10,5 +10,6 @@
     VALUES ('$nombre_consultado', '$apellido_resultado', '$edad_resultado', '$correo_resultado')";
     $resultado = mysqli_query($conexion, $query);
 
-    header("Location: index.php")
+    header("Location: http://localhost/index.php?p=/modules/databases/index");
+    // index.php
 ?>

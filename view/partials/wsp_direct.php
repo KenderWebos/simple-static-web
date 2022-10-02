@@ -1,12 +1,3 @@
-    <!-- <center>
-        <input id="color" class="button" type="button" onclick="changeColor()" value="CHANGE ALL">
-        <br>
-        <input id="color" class="button" type="button" value="START">
-        <input id="color" class="button" type="button" value="START">
-        <input id="color" class="button" type="button" value="START">
-
-    </center> -->
-
     <div style = "display: block;">
         <center>
             <div style="height:500px; background-color: black; color:white">
@@ -22,5 +13,3 @@
             </div>
         </center>
     </div>
-
-    <!-- <script src="../js/main.js"></script> -->
