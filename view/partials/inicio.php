@@ -9,22 +9,22 @@
         <div class="carousel-item active">
         <img src="view/public/images/carousel_main/img_1.png" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h5>Pagina web</h5>
+            <p>Desarrollaremos una pagina web para tu empresa.</p>
         </div>
         </div>
         <div class="carousel-item">
-        <img src="view/public/images/carousel_main/img_1.png" class="d-block w-100" alt="...">
+        <img src="view/public/images/carousel_main/img_2.png" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <h5>Doxeo</h5>
+            <p>Doxearemos a una persona 👀.</p>
         </div>
         </div>
         <div class="carousel-item">
-        <img src="view/public/images/carousel_main/img_1.png" class="d-block w-100" alt="...">
+        <img src="view/public/images/carousel_main/img_3.png" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <h5>Edicion de video y imagen</h5>
+            <p>Crearemos contenido digital para tu empresa.</p>
         </div>
         </div>
     </div>
@@ -55,9 +55,6 @@
             <p>En este sitio web se pueden encontrar todas las tareas y evaluaciones del Taller de ingenieria de software 1 de la UCSC</p>
             <p>Autor: Kevin Campos V</p>
 
-            <div class="parental_advisory">
-                <img style="width:450px; border:8px solid black; border-radius:20px" src="view/public/images/ucsc_edit.png" alt="some_web_dev_img">
-            </div>
             <!-- <a href="/images/myw3schoolsimage.jpg" download> -->
             
             <br>

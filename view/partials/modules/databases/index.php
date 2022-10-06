@@ -25,8 +25,22 @@ require("conexion.php");
     <?php
         $consulta = "SELECT * FROM alumnos";
         $resultado = mysqli_query($conexion, $consulta);
-
         echo "<center>";
+        echo "<hr>";
+
+        echo '<form id="edit_alumnos" action="view/partials/modules/databases/insert/insert_alumno.php" method="post">
+                <H1>EDITAR ALUMNOS</H1>
+                
+                <input name="id" type="text" placeholder="ID"><p></p>
+                <input name="nombre" type="text" placeholder="NOMBRE"><p></p>
+                <input name="apellido" type="text" placeholder="APELLIDO"><p></p>
+                <input name="edad" type="text" placeholder="EDAD"><p></p>
+                <input name="correo" type="text" placeholder="CORREO"><p></p>
+                <input class="btn btn-outline-dark" type="submit" value="SAVE">
+            </form>';
+
+        echo "<hr>";
+
         echo "<table class='table table-striped table-hover' style='width:50%; height:250px'>";
         echo "<thead>
             <th> NOMBRE </th>
@@ -34,6 +48,7 @@ require("conexion.php");
             <th> EDAD </th>
             <th> CORREO </th>
         </thead>";
+
         while( $row = mysqli_fetch_assoc($resultado) ){
             $nombre_consultado = $row["nombre"];
             $apellido_resultado = $row["apellido"];
@@ -50,6 +65,21 @@ require("conexion.php");
                         <th>'.$apellido_resultado.'</th>
                         <th>'.$edad_resultado.'</th>
                         <th>'.$correo_resultado.'</th>
+                        <th>
+                            <button type="button" class="btn btn-warning">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-danger">
+                                <span class="material-symbols-outlined">
+                                    close
+                                </span>
+                            </button>
+                        </th>
+                        
                     </tr>
                 ';
         }
@@ -62,6 +92,7 @@ require("conexion.php");
         <hr>
         <form action="view/partials/modules/databases/insert/insert_alumno.php" method="post">
             <H1>AGREGAR ALUMNOS</H1>
+            
             <input name="nombre" type="text" placeholder="NOMBRE"><p></p>
             <input name="apellido" type="text" placeholder="APELLIDO"><p></p>
             <input name="edad" type="text" placeholder="EDAD"><p></p>

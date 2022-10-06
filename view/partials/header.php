@@ -11,27 +11,33 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Tareas
+            Clones
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="index.php?p=Tarea1">Tarea1</a></li>
-            <li><a class="dropdown-item" href="index.php?p=Tarea2">Tarea2</a></li>
-            <li><a class="dropdown-item" href="index.php?p=Tarea3">Tarea3</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="index.php?p=/modules/databases/index">databases</a></li>
+            <li><a class="dropdown-item" href="evaluaciones/test1/test_1/index.html">CINEMARK</a></li>
+            <li><a class="dropdown-item" href="evaluaciones/test2/index.html">Twitter</a></li>
           </ul>
         </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Databases
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="index.php?p=/modules/databases/index">DB_CRUD</a></li>
+          </ul>
+        </li>
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Proyectos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            
-            <li><a class="dropdown-item" href="evaluaciones/test1/test_1/index.html">CINEMARK</a></li>
-            <li><a class="dropdown-item" href="view/partials/modules/simplepage/index.php">INTERACCIONES</a></li>
-            <li><a class="dropdown-item" href="view/partials/modules/bootstrap/index.html">Bootstrap</a></li>
-            <li><a class="dropdown-item" href="evaluaciones/test2/index.html">Twitter</a></li>
-
+            <li><a class="dropdown-item" href="index.php?p=/modules/databases/index">Games</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="index.php?p=/modules/databases/index">Diseños</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="index.php?p=/modules/databases/index">Instagram Filters</a></li>
           </ul>
         </li>
         
@@ -47,11 +53,19 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.php?p=contactos">Contactos</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.php?p=terminal">
+            <span class="material-symbols-outlined">terminal</span>
+          </a>
+        </li>
+
+        
       </ul>
-      <form class="d-flex">
+      <!-- <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
         <button onclick="helloWorld()" class="btn btn-outline-dark" type="submit">Buscar</button>
-      </form>
+      </form> -->
     </div>
   </div>
 </nav>
