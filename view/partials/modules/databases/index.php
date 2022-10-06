@@ -1,14 +1,6 @@
 <?php
-
 // $conexion = mysqli_connect("localhost", "root", "", "ingsoft")
 require("conexion.php");
-
-// if($conexion){
-//     echo "MAMAHUEVO FUNCIONOOOOO"
-// }else{
-//     echo "hermanito toi sad no funciono"
-// }
-
 ?>
 
 <!DOCTYPE html>
@@ -54,6 +46,7 @@ require("conexion.php");
             $apellido_resultado = $row["apellido"];
             $edad_resultado = $row["edad"];
             $correo_resultado = $row["correo"];
+            $id = $row["id"];
             // echo "<center><h1>".$nombre_consultado." ";
             // echo "".$apellido_resultado." ";
             // echo "".$edad_resultado." ";
@@ -73,11 +66,10 @@ require("conexion.php");
                             </button>
                         </th>
                         <th>
-                            <button type="button" class="btn btn-danger">
-                                <span class="material-symbols-outlined">
-                                    close
-                                </span>
-                            </button>
+                            <a href="view/partials/modules/databases/insert/delete_alumno.php?id='.$id.'">
+                                ELIMINAR
+                            </a>
+                            '.$id.'
                         </th>
                         
                     </tr>
@@ -87,7 +79,6 @@ require("conexion.php");
         echo "</center>";
         
     ?>
-    <!-- insert/insert_alumno.php -->
     <center>
         <hr>
         <form action="view/partials/modules/databases/insert/insert_alumno.php" method="post">
@@ -100,6 +91,7 @@ require("conexion.php");
             <input class="btn btn-outline-dark" type="submit" value="SAVE">
         </form>
     </center>
+    
 </body>
 </html>
 
