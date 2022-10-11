@@ -33,11 +33,11 @@
             Proyectos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="index.php?p=/modules/databases/index">Games</a></li>
+            <li><a class="dropdown-item" href="index.php?p=games">Games</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="index.php?p=/modules/databases/index">Diseños</a></li>
+            <li><a class="dropdown-item" href="https://www.instagram.com/kenderposting/" target="_blank">Diseños</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="index.php?p=/modules/databases/index">Instagram Filters</a></li>
+            <li><a class="dropdown-item" href="view\partials\landing.php" target="_blank">Landing</a></li>
           </ul>
         </li>
         
@@ -46,10 +46,15 @@
             Utilidades
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="index.php?p=wsp_direct">WSP direct</a></li>
+            <li><a class="dropdown-item" href="index.php?p=wsp_direct">wspDirect</a></li>
+            <li><a class="dropdown-item" href="index.php?p=/modules/databases/agenda">kCalendar</a></li>
           </ul>
         </li>
 
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.php?p=ks">KenderStore</a>
+        </li>
+        
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.php?p=contactos">Contactos</a>
         </li>

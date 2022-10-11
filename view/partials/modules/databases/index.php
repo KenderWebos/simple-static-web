@@ -20,19 +20,6 @@ require("conexion.php");
         echo "<center>";
         echo "<hr>";
 
-        echo '<form id="edit_alumnos" action="view/partials/modules/databases/insert/insert_alumno.php" method="post">
-                <H1>EDITAR ALUMNOS</H1>
-                
-                <input name="id" type="text" placeholder="ID"><p></p>
-                <input name="nombre" type="text" placeholder="NOMBRE"><p></p>
-                <input name="apellido" type="text" placeholder="APELLIDO"><p></p>
-                <input name="edad" type="text" placeholder="EDAD"><p></p>
-                <input name="correo" type="text" placeholder="CORREO"><p></p>
-                <input class="btn btn-outline-dark" type="submit" value="SAVE">
-            </form>';
-
-        echo "<hr>";
-
         echo "<table class='table table-striped table-hover' style='width:50%; height:250px'>";
         echo "<thead>
             <th> NOMBRE </th>
@@ -47,10 +34,6 @@ require("conexion.php");
             $edad_resultado = $row["edad"];
             $correo_resultado = $row["correo"];
             $id = $row["id"];
-            // echo "<center><h1>".$nombre_consultado." ";
-            // echo "".$apellido_resultado." ";
-            // echo "".$edad_resultado." ";
-            // echo "".$correo_resultado."</h1></center>";
 
             echo '
                     <tr>
@@ -76,6 +59,18 @@ require("conexion.php");
                 ';
         }
         echo "</table>";
+        echo "<hr>";
+        echo '<form id="update_alumnos" action="view/partials/modules/databases/insert/update_alumnos.php" method="post">
+                <H1>EDITAR ALUMNOS</H1>
+                
+                <input name="id" type="text" placeholder="ID"><p></p>
+                <input name="nombre" type="text" placeholder="NOMBRE"><p></p>
+                <input name="apellido" type="text" placeholder="APELLIDO"><p></p>
+                <input name="edad" type="text" placeholder="EDAD"><p></p>
+                <input name="correo" type="text" placeholder="CORREO"><p></p>
+                <input class="btn btn-outline-dark" type="submit" value="SAVE">
+            </form>';
+
         echo "</center>";
         
     ?>
