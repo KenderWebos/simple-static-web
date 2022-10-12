@@ -1,6 +1,14 @@
 <?php
 // $conexion = mysqli_connect("localhost", "root", "", "ingsoft")
 require("conexion.php");
+
+$contabilidad = true;
+$economia = true;
+$comunicacion_de_datos = true;
+$taller_de_ingenieria_de_software = true;
+$arquitectura_de_computadores = true;
+$personal = true;
+
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +21,7 @@ require("conexion.php");
 </head>
 <body>
 
-<div class="form-check form-switch">
+<!-- <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
   <label class="form-check-label" for="flexSwitchCheckDefault">Contabilidad</label>
 </div>
@@ -36,7 +44,7 @@ require("conexion.php");
 <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
   <label class="form-check-label" for="flexSwitchCheckChecked">Personal</label>
-</div>
+</div> -->
             
     <?php
         $consulta = "select id, fecha, descripcion, titulo, (DATEDIFF(fecha, CURRENT_DATE)) as days_left from eventos ORDER BY fecha";
@@ -44,6 +52,8 @@ require("conexion.php");
         echo "<center>";
         echo "<h1>KenderCalendar</h1>";
         echo "<hr>";
+
+        echo '<center><input type="text"></center>';
 
         echo "<table class='table table-striped table-hover' style='width:50%; height:250px'>";
         echo "<thead>

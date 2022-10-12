@@ -11,15 +11,21 @@
     
     <center>
 
-        <div class="web_module">
+        <div class="module">
             <h2>Terminal</h2>
             
-            <input id="terminal" class="terminal" type="text" autocomplete="off">
+            <form action="view\public\js\functions.js">
+                <textarea class="terminal" name="terminal" id="terminal" cols="30" rows="10" spellcheck=”false“></textarea>
+            </form>
+            
+            <img id="anime_dance" class="terminal-image" src="view\public\images\cd.gif" alt="">
             <!-- <input onclick="search_youtube()" class="btn btn-dark" type="submit" value="BUSCAR"> -->
         </div>
 
     </center>
     
     <script src="view/public/js/js_modules.js"></script>
+    <script src="view/public/js/terminal.js"></script>
+
 </body>
 </html>
