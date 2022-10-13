@@ -17,5 +17,14 @@
                 <a href="https://www.instagram.com/kevin_x_kender/" target="_blank" class="btn btn-outline-dark">VER</a>
             </div>
         </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top " src="" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">rouri</h5>
+                <p class="card-text">rouri el guapo <br> jugando visual studio.</p>
+                <a href="https://www.instagram.com/rowdi.e/" target="_blank" class="btn btn-outline-dark">VER</a>
+            </div>
+        </div>
     </div>
 </center>

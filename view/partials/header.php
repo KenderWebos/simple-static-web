@@ -47,7 +47,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="index.php?p=wsp_direct">wspDirect</a></li>
-            <li><a class="dropdown-item" href="index.php?p=/modules/databases/agenda">kCalendar</a></li>
+            <li><a class="dropdown-item" href="index.php?p=/modules/databases/kcalendar">kCalendar</a></li>
           </ul>
         </li>
 
