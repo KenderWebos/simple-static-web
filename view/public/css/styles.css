@@ -13,3 +13,19 @@
     position: fixed;
     display:block;
 }
+
+.webmodule{
+
+}
+
+.switch-container{
+    width:20%;
+}
+
+.login_container{
+    background-color: black;
+}
+
+.view_image{
+    width: 50%;
+}

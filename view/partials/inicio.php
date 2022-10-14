@@ -25,12 +25,12 @@
         </div>
     </div>
 
-    <div class="card">
-        <iframe src="https://www.youtube.com/embed/H5B3M5GvwmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="view\public\images\games\inf_chris_01.png" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">ROBOTO SoundTrack</h5>
-            <p class="card-text">A simple song for the ROBOTO gamejam project.</p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            <h5 class="card-title">GAMES</h5>
+            <p class="card-text">Desarrollo de <strong>VIDEOSJUEGOS</strong> 🎮 👀.</p>
+            <a href="index.php?p=games" class="btn btn-outline-dark">VER</a>
         </div>
     </div>
 </div>

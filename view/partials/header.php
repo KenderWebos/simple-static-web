@@ -36,8 +36,6 @@
             <li><a class="dropdown-item" href="index.php?p=games">Games</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="https://www.instagram.com/kenderposting/" target="_blank">Diseños</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="view\partials\landing.php" target="_blank">Landing</a></li>
           </ul>
         </li>
         

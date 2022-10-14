@@ -1,14 +1,12 @@
 <?php
 require('../conexion.php');
+require('../config.php');
 
 $consulta = "select id, fecha, descripcion, titulo, (DATEDIFF(fecha, CURRENT_DATE)) as days_left from eventos ORDER BY fecha";
 $resultado = mysqli_query($conexion, $consulta);
 echo "<center>";
 echo "<h1>KenderCalendar</h1>";
-echo "
-<hr>";
-
-echo '<center><input type="text"></center>';
+echo "<hr>";
 
 echo "<table class='table table-striped table-hover' style='width:50%; height:250px'>";
         echo "<thead>
@@ -34,13 +32,20 @@ echo "<table class='table table-striped table-hover' style='width:50%; height:25
             <th>' . $descripcion . '</th>
             <th>' . $titulo . '</th>
             <th>
-                <a href="view/partials/modules/databases/insert/delete_events.php?id=' . $id . '">
+        ';
+
+        if($username == "kenderwebos"){
+            echo 
+            '
+            <a href="view/partials/modules/databases/insert/delete_events.php?id=' . $id . '">
                     ELIMINAR
                 </a>
-            </th>
+            ';
+        }
 
-        </tr>
-        ';
+        echo '</th>
+
+        </tr>';
         }
         }
         echo "
