@@ -45,12 +45,16 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="index.php?p=wsp_direct">wspDirect</a></li>
-            <li><a class="dropdown-item" href="index.php?p=/modules/databases/kcalendar">kCalendar</a></li>
+            <li><a class="dropdown-item" href="index.php?p=/modules/databases/kcalendar">kCalendar_editor</a></li>
           </ul>
         </li>
 
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.php?p=ks">KenderStore</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.php?p=/modules/databases/read/read_events">kCalendar</a>
         </li>
         
         <li class="nav-item">

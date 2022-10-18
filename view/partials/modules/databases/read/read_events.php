@@ -1,6 +1,6 @@
 <?php
-require('../conexion.php');
-require('../config.php');
+require('view\partials\modules\databases\conexion.php');
+require('view\partials\modules\databases\config.php');
 
 $consulta = "select id, fecha, descripcion, titulo, (DATEDIFF(fecha, CURRENT_DATE)) as days_left from eventos ORDER BY fecha";
 $resultado = mysqli_query($conexion, $consulta);
