@@ -2,20 +2,18 @@
     width: 50%;
     height: 500px;
     background-color: black;
-    color : rgb(0, 255, 0);
+    color : rgb(49, 253, 49);
 
     /* background-image: url("view\public\images\heritech\wallpaper_heritech.png"); */
 }
 
 .terminal-image{
+    /* background-color: red; */
+    top: 70%;
     opacity: 50%;
-    translate: 50%;
+    translate: 0%;
     position: fixed;
     display:block;
-}
-
-.webmodule{
-
 }
 
 .switch-container{
@@ -23,9 +21,32 @@
 }
 
 .login_container{
+    padding: 80px;
     background-color: black;
 }
 
 .view_image{
     width: 50%;
+}
+
+.db_module_container{
+    display:flex;
+    padding: 20px;
+}
+
+.db_module_container_element{
+    padding: 50px;
+}
+
+.simplecube{
+    border-radius: 8px;
+    width: 8px;
+    height: 500px;
+    background-color: rgb(50, 50, 50);
+}
+
+.presentation{
+    color:white;
+    padding:40px;
+    background-color: rgb(44, 44, 44);
 }

@@ -39,23 +39,15 @@
 <div class="divplus">
         <center>
             <hr>
-            <h1>Taller de ingenieria de software</h1>
+            <img style="width:30%" src="view\public\images\heritech\ht_logo.png" alt="some heritech logo">
             <hr>
-            <p> Taller de Ingeniería de Software I
-                <br>
-                Lorenzo Paredes
-                <br>
-                lorenzo.paredes@ucsc.cl </p>
-            <hr>
-            <p>En este sitio web se pueden encontrar todas las tareas y evaluaciones del Taller de ingenieria de software 1 de la UCSC</p>
-            <p>Autor: Kevin Campos V</p>
-
-            <!-- <a href="/images/myw3schoolsimage.jpg" download> -->
-            
-            <br>
-            <br>
-            <br>
         </center>
-</div>
+
+        <div class="presentation">
+            <h3>Somos una empresa dedicada a brindar soluciones tecnológicas a tus necesidades de negocio.</h3>
+            <h3>Actualmente somos un equipo de ingeniera que trabaja en sus proyectos personales, desde desarrollo web, innovación y desarrollo de videojuegos.</h3>
+            <h3>Planeamos contribuir a un mundo mas organizado y eficiente atreves de la creatividad y desarrollo de ideas en tecnológicas.</h3>
+        </div>
+    </div>
 
     

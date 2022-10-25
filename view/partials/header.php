@@ -9,15 +9,15 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Clones
+               
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="evaluaciones/test1/test_1/index.html">CINEMARK</a></li>
             <li><a class="dropdown-item" href="evaluaciones/test2/index.html">Twitter</a></li>
           </ul>
-        </li>
+        </li> -->
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -34,8 +34,8 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="index.php?p=games">Games</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="https://www.instagram.com/kenderposting/" target="_blank">Diseños</a></li>
+            <!-- <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="https://www.instagram.com/kenderposting/" target="_blank">Diseños</a></li> -->
           </ul>
         </li>
         
@@ -67,6 +67,17 @@
           </a>
         </li>
 
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.php?p=login">
+            <span class="material-symbols-outlined">login</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.php?p=logout">
+            <span class="material-symbols-outlined">logout</span>
+          </a>
+        </li>
         
       </ul>
       <!-- <form class="d-flex">

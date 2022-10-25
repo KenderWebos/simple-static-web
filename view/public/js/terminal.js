@@ -19,29 +19,19 @@ terminal.addEventListener("keyup", function (event) {
     }
 });
 
-allcomands = "hola, adios, wsp_direct, calendar, horario, shoping, dance, help, cls";
+arrayCommands = ["wsp_direct: send a wsp to a munber without add him", "calendar", "shoping", "dance", "help", "cls"];
 anime_dance = true;
 
 function interpreter(argument) {
     terminal.value += "> ";
     switch (argument) {
-        case "hola":
-            terminal.value += "hola";
-            break;
-        case "adios":
-            terminal.value += "adiosMundo";
-            break;
         case "wsp_direct":
             terminal.value += `abriendo ${argument}`;
             window.open("http://localhost/index.php?p=wsp_direct")
             break;
         case "calendar":
             terminal.value += `abriendo ${argument}`;
-            window.open("http://localhost/index.php?p=/modules/databases/agenda")
-            break;
-        case "horario":
-            terminal.value += `abriendo ${argument}`;
-            window.open("https://www.google.cl/");
+            window.open("http://localhost/index.php?p=/modules/databases/kcalendar")
             break;
         case "shoping":
             terminal.value += `abriendo ${argument}`;
@@ -55,9 +45,13 @@ function interpreter(argument) {
             if (anime_dance) { document.getElementById("anime_dance").style.display = "block"; } else { document.getElementById("anime_dance").style.display = "none"; }
             break;
         case "help":
-            terminal.value += `Comandos disponibles:\n - ${allcomands} -`;
+            terminal.value += `comandos disponibles: \n`;
+            printCommands();
             break;
         case "cls":
+            terminal.value = '';
+            break;
+        case "clear":
             terminal.value = '';
             break;
         default:
@@ -65,5 +59,11 @@ function interpreter(argument) {
 
     }
 
-    if (argument != "cls") { terminal.value += "\n" };
+    if (argument != "cls" && argument != "clear") { terminal.value += "\n" };
+}
+
+function printCommands() {
+    for (let index = 0; index < arrayCommands.length; index++) {
+        terminal.value += "        "+arrayCommands[index] + "\n";
+    }
 }

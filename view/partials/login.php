@@ -31,9 +31,12 @@
 						</div>
 						<input type="password" class="form-control" placeholder="password">
 					</div>
-					<div class="form-group">
-						<input type="submit" value="Login" class="btn btn-outline-dark">
-					</div>
+					<center>
+						<br>
+						<div class="form-group">
+							<input type="submit" value="Login" class="btn btn-outline-dark">
+						</div>
+					</center>
 				</form>
 			</div>
 			<div class="card-footer">
