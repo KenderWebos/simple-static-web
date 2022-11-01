@@ -50,3 +50,8 @@
     padding:40px;
     background-color: rgb(44, 44, 44);
 }
+
+.knote_container{
+    padding:20px;
+    background-color: gray;
+}

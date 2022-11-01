@@ -58,7 +58,7 @@ $personal = true;
             $days_left_formated = "<strong style='color: red'>" . $days_left . "</strong>";
         }
 
-        if ($days_left > -365) {
+        if ($days_left > -21) {
             echo '
                     <tr>
                         <th><center>' . $days_left_formated . '</center></th>

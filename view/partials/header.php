@@ -19,14 +19,14 @@
           </ul>
         </li> -->
 
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Databases
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="index.php?p=/modules/databases/index">DB_CRUD</a></li>
           </ul>
-        </li>
+        </li> -->
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -57,6 +57,18 @@
           <a class="nav-link active" aria-current="page" href="index.php?p=/modules/databases/read/read_events">kCalendar</a>
         </li>
         
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.php?p=kreq">kReq</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.php?p=knotes">kNotes</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.php?p=radiorowdie">RadioRowdie</a>
+        </li>
+
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.php?p=contactos">Contactos</a>
         </li>

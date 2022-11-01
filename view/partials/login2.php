@@ -21,8 +21,6 @@
         </form>
     </nav>
 
-    <!-- <img class="card-img-top" src="https://www.chilexpress.cl/Resources/img/Vitrinas/637729159122807945.jpeg" alt="Card image cap"> -->
-
     </br>
     </br>
     <center>
@@ -57,4 +55,3 @@
     </br>
 
 </body>
-</html>

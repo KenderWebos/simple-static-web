@@ -9,24 +9,25 @@
         </div>
     </div> -->
     <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="view\public\images\parental.PNG" alt="Card image cap">
+        <a href="index.php?p=wsp_direct"><img class="card-img-top" src="view\public\images\wsp.png" alt="Card image cap"></a>
         <div class="card-body">
-            <h5 class="card-title">PARENTAL ADVISORY</h5>
-            <p class="card-text">Some parental advisory explicit content.</p>
-            <a href="https://www.instagram.com/stories/highlights/17970046117654709/" target="_blank" class="btn btn-outline-dark">VER</a>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="view\public\images\kenderStore\stickers (3).jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">KenderStore</h5>
-            <p class="card-text">lets see something.</p>
-            <a href="index.php?p=ks" class="btn btn-outline-dark">VER</a>
+            <h5 class="card-title">WSP direct msj</h5>
+            <p class="card-text">Send a direct wsp msj.</p>
+            <a href="index.php?p=wsp_direct" class="btn btn-outline-dark">GO</a>
         </div>
     </div>
 
     <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="view\public\images\games\inf_chris_01.png" alt="Card image cap">
+        <a href="index.php?p=radiorowdie"><img class="card-img-top" src="view\public\images\radio.webp" alt="Card image cap"></a>
+        <div class="card-body">
+            <h5 class="card-title">RadioRowdieFM</h5>
+            <p class="card-text">Lets lisen to some music.</p>
+            <a href="index.php?p=radiorowdie" class="btn btn-outline-dark">GO</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <a href="index.php?p=games"><img class="card-img-top" src="view\public\images\games\inf_chris_01.png" alt="Card image cap"></a>
         <div class="card-body">
             <h5 class="card-title">GAMES</h5>
             <p class="card-text">Desarrollo de <strong>VIDEOSJUEGOS</strong> 🎮 👀.</p>
@@ -39,14 +40,14 @@
 <div class="divplus">
         <center>
             <hr>
-            <img style="width:30%" src="view\public\images\heritech\ht_logo.png" alt="some heritech logo">
+            <img style="width:20%" src="view\public\images\heritech\ht_logo.png" alt="some heritech logo">
             <hr>
         </center>
 
         <div class="presentation">
-            <h3>Somos una empresa dedicada a brindar soluciones tecnológicas a tus necesidades de negocio.</h3>
-            <h3>Actualmente somos un equipo de ingeniera que trabaja en sus proyectos personales, desde desarrollo web, innovación y desarrollo de videojuegos.</h3>
-            <h3>Planeamos contribuir a un mundo mas organizado y eficiente atreves de la creatividad y desarrollo de ideas en tecnológicas.</h3>
+            <h4>Somos una empresa dedicada a brindar soluciones tecnológicas a tus necesidades de negocio.</h4>
+            <h4>Actualmente somos un equipo de ingeniera que trabaja en sus proyectos personales, desde desarrollo web, innovación y desarrollo de videojuegos.</h4>
+            <h4>Planeamos contribuir a un mundo mas organizado y eficiente atravez de la creatividad y desarrollo de ideas en tecnológicas.</h4>
         </div>
     </div>
 
