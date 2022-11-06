@@ -18,6 +18,15 @@
     </div>
 
     <div class="card" style="width: 18rem;">
+        <a href="index.php?p=/modules/databases/read/read_events"><img class="card-img-top" src="view\public\images\kcalendar.jpg" alt="Card image cap"></a>
+        <div class="card-body">
+            <h5 class="card-title">kCalendar</h5>
+            <p class="card-text">Calendaaar! ugu</p>
+            <a href="index.php?p=/modules/databases/read/read_events" class="btn btn-outline-dark">GO</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
         <a href="index.php?p=radiorowdie"><img class="card-img-top" src="view\public\images\radio.webp" alt="Card image cap"></a>
         <div class="card-body">
             <h5 class="card-title">RadioRowdieFM</h5>

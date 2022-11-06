@@ -38,7 +38,7 @@
             <li><a class="dropdown-item" href="https://www.instagram.com/kenderposting/" target="_blank">Diseños</a></li> -->
           </ul>
         </li>
-        
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Utilidades
@@ -53,16 +53,21 @@
           <a class="nav-link active" aria-current="page" href="index.php?p=ks">KenderStore</a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php?p=/modules/databases/read/read_events">kCalendar</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php?p=kreq">kReq</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php?p=knotes">kNotes</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            kApps
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li class="nav-item">
+              <a class="dropdown-item" aria-current="page" href="index.php?p=/modules/databases/read/read_events">kCalendar</a>
+            </li>
+            <li class="nav-item">
+              <a class="dropdown-item" aria-current="page" href="index.php?p=kreq">kReq</a>
+            </li>
+            <li class="nav-item">
+              <a class="dropdown-item" aria-current="page" href="index.php?p=knotes">kNotes</a>
+            </li>
+          </ul>
         </li>
 
         <li class="nav-item">
@@ -90,7 +95,7 @@
             <span class="material-symbols-outlined">logout</span>
           </a>
         </li>
-        
+
       </ul>
       <!-- <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -99,5 +104,3 @@
     </div>
   </div>
 </nav>
-
-    
