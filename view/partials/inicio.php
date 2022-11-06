@@ -36,6 +36,15 @@
     </div>
 
     <div class="card" style="width: 18rem;">
+        <a href="index.php?p=ks"><img class="card-img-top" src="view\public\images\kenderStore\pixelart\img_pixelart.png" alt="Card image cap"></a>
+        <div class="card-body">
+            <h5 class="card-title">KenderStore</h5>
+            <p class="card-text">Come in and buy something interesting.</p>
+            <a href="index.php?p=ks" class="btn btn-outline-dark">GO</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
         <a href="index.php?p=games"><img class="card-img-top" src="view\public\images\games\inf_chris_01.png" alt="Card image cap"></a>
         <div class="card-body">
             <h5 class="card-title">GAMES</h5>
