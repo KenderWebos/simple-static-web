@@ -96,6 +96,12 @@
           </a>
         </li>
 
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="view\partials\modules\sidebar\index.html">
+            <span class="material-symbols-outlined">home</span>
+          </a>
+        </li>
+
       </ul>
       <!-- <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">

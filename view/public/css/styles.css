@@ -59,3 +59,17 @@
 .kImg{
     width: 40%;
 }
+
+
+
+.kSidebar{
+    background-color: red;
+    width:10%;
+    top:0px;
+    display:inline-block;
+}
+
+.page_container{
+    width: 80%;
+    display:inline-block;
+}
