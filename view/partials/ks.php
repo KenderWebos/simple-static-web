@@ -6,27 +6,27 @@
         <h2>PIXELART</h2>
         <h3>Calcular precio</h3>
         <div class="form-group">
-            <label for="exampleInputEmail1">Largo en centimetros</label>
+            <label for="exampleInputEmail1">Largo en pixeles</label>
             <input type="text" class="form-control" id="largo" aria-describedby="emailHelp" placeholder="Largo" autocomplete="off">
-            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
         </div>
 
         <div class="form-group">
-            <label for="exampleInputEmail1">Ancho en centimetros</label>
+            <label for="exampleInputEmail1">Ancho en pixeles</label>
             <input type="text" class="form-control" id="ancho" aria-describedby="emailHelp" placeholder="Ancho" autocomplete="off">
-            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
         </div>
 
+        <p>El producto puede entregarse como <a href="#">llavero</a>, <a href="">pin de refrigerador</a> o <a href="">normal</a></p>
+
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="llavero" value="option1">
+            <input class="form-check-input" type="checkbox" id="llavero" value="option1" disabled>
             <label class="form-check-label" for="inlineCheckbox1">llavero</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="imantado" value="option2">
+            <input class="form-check-input" type="checkbox" id="imantado" value="option2" disabled>
             <label class="form-check-label" for="inlineCheckbox2">imantado</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="reflectante" value="option2">
+            <input class="form-check-input" type="checkbox" id="reflectante" value="option2" disabled>
             <label class="form-check-label" for="inlineCheckbox2">reflectante</label>
         </div>
         <div class="form-check form-check-inline">

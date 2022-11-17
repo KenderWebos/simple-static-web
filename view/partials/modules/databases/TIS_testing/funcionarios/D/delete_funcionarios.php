@@ -1,9 +1,9 @@
 <?php
-    require('../conexion.php');
+    require('../../conexion.php');
 
-    $id = $_GET["id"];
+    $rut_funcionario = $_POST["rut_funcionario"];
 
-    $query = "DELETE FROM `funcionario` WHERE id = $id";
+    $query = "DELETE FROM `funcionarios` WHERE rut_funcionario = $rut_funcionario";
     $resultado = mysqli_query($conexion, $query);
 
     // header("Location: http://localhost/index.php?p=/modules/databases/kcalendar");

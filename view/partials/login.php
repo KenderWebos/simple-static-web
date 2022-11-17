@@ -1,49 +1,43 @@
-<div class="login_container">
-	<div class="d-flex justify-content-center h-100">
-		<div class="card">
-			<div class="card-header">
-				<h3>INICIAR SESION</h3>
-				<div class="d-flex justify-content-end social_icon">
-					<span><i class="fab fa-facebook-square"></i></span>
-					<span><i class="fab fa-google-plus-square"></i></span>
-					<span><i class="fab fa-twitter-square"></i></span>
-				</div>
-			</div>
-			<div class="card-body">
-				<form>
-                <div class="alert alert-warning" role="alert">
-                    NO USES CONTRASEÑAS QUE UTILICES EN OTROS SITIOS!! NO NOS HACEMOS RESPONSABLES DE PERDIDAS DE INFORMACION.
-                </div>
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-                            <span class="material-symbols-outlined">
-                                account_circle
-                            </span>
-						</div>
-						<input type="text" class="form-control" placeholder="username">
-						
-					</div>
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-                            <span class="material-symbols-outlined">
-                                key
-                            </span>
-						</div>
-						<input type="password" class="form-control" placeholder="password">
-					</div>
-					<center>
-						<br>
-						<div class="form-group">
-							<input type="submit" value="Login" class="btn btn-outline-dark">
-						</div>
-					</center>
-				</form>
-			</div>
-			<div class="card-footer">
-				<div class="d-flex justify-content-center">
+<body>
+  </br>
+  </br>
+  <center>
+    <div style="width: 30%; border: gray 5px solid; padding: 25px; border-radius: 10px;">
+      <form action="view\partials\zz_exito.php" method="post">
+        <h3>Iniciar sesion</h3>
+
+        <br>
+
+        <div class="form-group">
+          <label>Nombre de usuario: </label>
+          <input type="text" class="form-control" name="inputUserName" placeholder="Nombre de usuario" autocomplete="off">
+        </div>
+
+        <div class="alert alert-warning" role="alert">
+          NO USES CONTRASEÑAS QUE UTILICES EN OTROS SITIOS!! NO NOS HACEMOS RESPONSABLES DE PERDIDAS DE INFORMACION.
+        </div>
+
+        <div class="form-group">
+          <label>Contraseña: </label>
+          <input type="password" class="form-control" name="inputPassword" placeholder="Contraseña" autocomplete="off">
+        </div>
+
+        <div class="form-group">
+          <a href="index.php?p=/zz_exito"> Registrar nuevo usuario </a>
+        </div>
+
+        <div class="d-flex justify-content-center">
 					<a href="https://www.google.cl/" target="_blank">Need help?</a>
 				</div>
-			</div>
-		</div>
-	</div>
-</div>
+
+        <button type="submit" class="btn btn-success">Iniciar sesion</button>
+
+      </form>
+    </div>
+
+  </center>
+
+  </br>
+  </br>
+
+</body>

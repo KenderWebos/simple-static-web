@@ -1,12 +1,12 @@
 <?php
-require("conexion.php");
+require("view\partials\modules\databases\TIS_testing\conexion.php");
 
 ?>
 
 <body>
 
     <?php
-    $consulta = "select rut_funcionario, nombre_funcionario, tipo from funcionario"; // cambio de nombre funcionarios (?)
+    $consulta = "select rut_funcionario, nombre_funcionario, tipo from funcionarios";
     $resultado = mysqli_query($conexion, $consulta);
     echo "<center>";
     echo "<h1>funcionarios</h1>";
@@ -37,7 +37,6 @@ require("conexion.php");
     echo "</table>";
 
     echo "</center>";
-
     ?>
 
 </body>
