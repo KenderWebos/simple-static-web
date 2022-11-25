@@ -28,7 +28,7 @@ function wspDirect(){
     else{
         alert("El numero debe tener 8 digitos");
     }
-    document.getElementById("wspDirectInput").value = "";
+    //document.getElementById("wspDirectInput").value = "";
 }
 
 function search_youtube()

@@ -22,102 +22,107 @@ $personal = true;
 </head>
 
 <body>
+    <div class="feedback text-white border">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">kCalendar</li>
+            </ol>
+        </nav>
+    </div>
 
-    <?php
-    $consulta = "select id, fecha, descripcion, titulo, (DATEDIFF(fecha, CURRENT_DATE)) as days_left from eventos ORDER BY fecha";
-    $resultado = mysqli_query($conexion, $consulta);
-    echo "<center>";
-    echo "<h1>kCalendar</h1>";
-    echo "<hr>";
-
-    require "view\partials\kcalendar\add_event.php";
-    // require "view\partials\modules\sidebar\index.php";
-
-    echo "<p> buscar lo de nodemailer </p>";
-
-    // echo `<!-- Button trigger modal -->
-    // <button type="button" class="btn btn-outline-primary " data-toggle="modal" data-target="#kcalendar_filter_modal">
-    //   Filtro
-    // </button>
+    <!-- aqui es para hacer las notificaciones feedback -->
     
-    // <!-- Modal -->
-    // <div class="modal fade" id="kcalendar_filter_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    //   <div class="modal-dialog" role="document">
-    //     <div class="modal-content">
-    //       <div class="modal-header">
-    //         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-    //         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-    //           <span aria-hidden="true">&times;</span>
-    //         </button>
-    //       </div>
-    //       <div class="modal-body">
-            
-    //       </div>
-    //       <div class="modal-footer">
-    //         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-    //         <button type="button" class="btn btn-primary">Save changes</button>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>`;
+    <!-- <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
 
-    echo "<table class='table table-striped table-hover' style='width:50%; height:250px'>";
-    echo "<thead>
-            <th> DIAS RESTANTES </th>
-            <th> FECHA </th>
-            <th> DESCRIPCION </th>
-            <th> TITULO </th>
-        </thead>";
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="..." class="rounded me-2" alt="...">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
+    </div> -->
 
-    while ($row = mysqli_fetch_assoc($resultado)) {
-        $days_left = $row['days_left'];
-        $id = $row["id"];
-        $fecha = $row["fecha"];
-        $descripcion = $row["descripcion"];
-        $titulo = $row['titulo'];
-        $id = $row["id"];
+    <center>
+        <h1>kCalendar</h1>
+        <hr>
+        <table class='table table-striped table-hover' style='width:50%; height:250px'>
+            <thead>
+                <th> DIAS RESTANTES </th>
+                <th> FECHA </th>
+                <th> DESCRIPCION </th>
+                <th> TITULO </th>
+            </thead>
 
-        $days_left_formated = $days_left;
+            <?php
+            $consulta = "select id, fecha, descripcion, titulo, (DATEDIFF(fecha, CURRENT_DATE)) as days_left from eventos ORDER BY fecha";
+            $resultado = mysqli_query($conexion, $consulta);
 
-        if($days_left == 0)
-        {
-            $days_left_formated = "<strong>HOY</strong>";
-        }
-        elseif($days_left > 0)
-        {
-            $days_left_formated = "<strong style='color: green'>" . $days_left . "</strong>";
-            if($days_left == 1){
-                $days_left_formated = "<strong style='color: green'> Mañana </strong>";
-            }
-        }
-        elseif($days_left < 0)
-        {
-            $days_left_formated = "<strong style='color: red'>" . $days_left . "</strong>";
-        }
+            // require "view\partials\modules\sidebar\index.php";
+            ?>
 
-        if ($days_left > -365) {
-            echo '
+            <div class="createButtonContainer border col-10 bg-dark text-light p-20">
+                <h3>Agregar eventos</h3>
+                <?php require "view\partials\kcalendar\create_event_form.php"; ?>
+            </div>
+
+            <?php while ($row = mysqli_fetch_assoc($resultado)) { ?>
+                <?php
+                $days_left = $row['days_left'];
+                $id = $row["id"];
+                $fecha = $row["fecha"];
+                $descripcion = $row["descripcion"];
+                $titulo = $row['titulo'];
+                $id = $row["id"];
+
+                $day_left_class = $days_left == 0 ? "" : ($days_left >= 1 ? "text-success" : "text-danger");
+                $day_left_text = $days_left == 0 ? "Hoy" : ($days_left == 1 ? "Mañana" : $days_left);
+                ?>
+
+
+                <?php if ($days_left > -365) { ?>
+
                     <tr>
-                        <th><center>' . $days_left_formated . '</center></th>
-                        <th>' . $fecha . '</th>
-                        <th>' . $descripcion . '</th>
-                        <th>' . $titulo . '</th>
                         <th>
-                            <a href="view/partials/modules/databases/insert/delete_events.php?id=' . $id . '">
-                                ELIMINAR
+                            <center>
+                                <strong class='<?= $day_left_class ?>'><?= $day_left_text  ?></strong>
+                            </center>
+                        </th>
+                        <th><?= $fecha ?></th>
+                        <th><?= $descripcion ?></th>
+                        <th><?= $titulo ?></th>
+                        <th>
+                            <!-- <a class="btn btn-primary" href="view/partials/modules/databases/insert/update_events.php?id=<?= $id ?>">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </a> -->
+                            <?php require "view\partials\kcalendar\update_event_form.php"; ?>
+                        </th>
+
+                        <th>
+                            <?php //require "view\partials\kcalendar\delete_event_form.php"
+                            ?>
+                            <a class="btn btn-danger" href="view/partials/modules/databases/insert/delete_events.php?id=<?= $id ?>">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
                             </a>
                         </th>
-                        
                     </tr>
-                ';
-        }
-    }
-    echo "</table>";
 
-    echo "</center>";
+                <?php } ?>
+            <?php  } ?>
 
-    ?>
 
+        </table>
+    </center>
 </body>
 
 </html>

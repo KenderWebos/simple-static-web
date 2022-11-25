@@ -61,9 +61,9 @@
             <li class="nav-item">
               <a class="dropdown-item" aria-current="page" href="index.php?p=/modules/databases/read/read_events">kCalendar</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="dropdown-item" aria-current="page" href="index.php?p=kreq">kReq</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="dropdown-item" aria-current="page" href="index.php?p=knotes">kNotes</a>
             </li>
@@ -76,10 +76,6 @@
 
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.php?p=contactos">Contactos</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php?p=learning\html\mari.html">mari_html</a>
         </li>
 
         <li class="nav-item">
@@ -102,54 +98,29 @@
 
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="view\partials\modules\sidebar\side.php">
-            <span class="material-symbols-outlined">home</span>
+            <span class="material-symbols-outlined">menu</span>
           </a>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Gestionar
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li class="nav-item">
-              <a class="dropdown-item" aria-current="page" href="index.php?p=/modules/databases/TIS_testing/funcionarios/C/create_funcionarios_form">CREATE</a>
-            </li>
-            <li class="nav-item">
-              <a class="dropdown-item" aria-current="page" href="index.php?p=/modules/databases/TIS_testing/funcionarios/R/read_funcionarios">READ</a>
-            </li>
-            <li class="nav-item">
-              <a class="dropdown-item" aria-current="page" href="index.php?p=/modules/databases/TIS_testing/funcionarios/U/update_funcionarios_form">UPDATE</a>
-            </li>
-            <li class="nav-item">
-              <a class="dropdown-item" aria-current="page" href="index.php?p=/modules/databases/TIS_testing/funcionarios/D/delete_funcionarios_form">DELETE</a>
-            </li>
-          </ul>
-        </li>
-
-        <li>
+        <!-- <li>
           <div class="userpanel float-md-right">
             <img class="userpanel_image" src="view\public\images\people\KevinCampos\main_img.png" alt="some user image">
             <p>KenderWebos</p>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li class="nav-item">
-              <a class="dropdown-item" aria-current="page" href="index.php?p=/login/userconfig_form">Editar perfil</a>
-            </li>
-            <li class="nav-item">
-              <a class="dropdown-item" aria-current="page" href="index.php?p=/zz_exito">Salir</a>
-            </li>
-          </ul>
-        </li>
-        </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li class="nav-item">
+                <a class="dropdown-item" aria-current="page" href="index.php?p=/login/userconfig_form">Editar perfil</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item" aria-current="page" href="index.php?p=/zz_exito">Salir</a>
+              </li>
+            </ul>
+          </li>
+        </li> -->
     </div>
-
-    <!-- <span class="float-right">
-            palabra a la derecha
-          </span> -->
-
     </ul>
     <!-- <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
