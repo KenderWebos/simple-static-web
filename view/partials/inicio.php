@@ -59,6 +59,15 @@
 </div>
 </center>
 
+<div class="graph_container col-4">
+    <?php 
+    require "view\partials\chart.php";
+    ?>
+</div>
+
+<!-- <canvas id="main_graph" width='500' height="500"></canvas>
+<script src="view\public\js\graphsManager.js"></script> -->
+
 <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-4">
   <a class="navbar-brand" href="#">Navbar</a>
   <nav class="nav nav-pills flex-column">

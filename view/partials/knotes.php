@@ -1,20 +1,18 @@
-    <div style="display: block;">
-        <center>
-            <div style="height:100%; width:80%; background-color: black; color:white">
+    <div>
+        <div class="col-12 text-center" style="background-color: black; color:white">
 
-                <br>
-                <p> > kNotes </p>
+            <br>
+            <p> > kNotes </p>
 
-                <div class="knote_container">
-                    <form action="">
-                        <textarea name="" id="" cols="60" rows="1"></textarea>
-                        <br>
-                        <textarea name="" id="" cols="60" rows="20"></textarea>
-                        <br>
-                        <button onclick="wspDirect()" type="button" class="btn btn-success"> SAVE </button>
-                    </form>
-                </div>
-
+            <div class="knote_container">
+                <form action="">
+                    <textarea class="bg-black text-white" name="kNote_title" cols="60" rows="1"></textarea>
+                    <br>
+                    <textarea class="bg-black text-white" name="kNote_body" cols="60" rows="20"></textarea>
+                    <br>
+                    <button type="submit" class="btn btn-light"> SEND NOTE </button>
+                </form>
             </div>
-        </center>
+
+        </div>
     </div>

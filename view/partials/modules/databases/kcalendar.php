@@ -51,77 +51,98 @@ $personal = true;
 
     <center>
         <h1>kCalendar</h1>
-        <hr>
-        <table class='table table-striped table-hover' style='width:50%; height:250px'>
-            <thead>
-                <th> DIAS RESTANTES </th>
-                <th> FECHA </th>
-                <th> DESCRIPCION </th>
-                <th> TITULO </th>
-            </thead>
+        <h3>ACTUALIZAR EVENTO</h3>
+        <form class="p-4 m-4 col-5" action="view/partials/modules/databases/insert/insert_events.php" method="post">
+          <input name="descripcion" type="text" placeholder="DESCRIPCION" autocomplete="off">
+          <br>
+          <input name="fecha" type="date" placeholder="FECHA">
+          <br>
+          <select class="custom-select" name="select">
+            <option value="Contabilidad">Contabilidad</option>
+            <option value="Economia">Economia</option>
+            <option value="Comunicacion de datos">Comunicacion de datos</option>
+            <option value="Taller de ingenieria de software">Taller de ingenieria de software</option>
+            <option value="Arquitectura de computadores">Arquitectura de computadores</option>
+            <option value="Personal" selected>Personal</option>
+          </select>
 
-            <?php
-            $consulta = "select id, fecha, descripcion, titulo, (DATEDIFF(fecha, CURRENT_DATE)) as days_left from eventos ORDER BY fecha";
-            $resultado = mysqli_query($conexion, $consulta);
+          <center>
+            <input class="btn btn-success" type="submit" value="ACTUALIZAR">
+          </center>
+        </form>
 
-            // require "view\partials\modules\sidebar\index.php";
-            ?>
+        <div class="tableContainer col-sm-12 col-md-8 col-lg-6">
+            <table class='table table-striped table-hover'>
+                <thead>
+                    <th> DIAS RESTANTES </th>
+                    <th> FECHA </th>
+                    <th> DESCRIPCION </th>
+                    <th> TITULO </th>
+                </thead>
 
-            <div class="createButtonContainer border col-10 bg-dark text-light p-20">
-                <h3>Agregar eventos</h3>
-                <?php require "view\partials\kcalendar\create_event_form.php"; ?>
-            </div>
-
-            <?php while ($row = mysqli_fetch_assoc($resultado)) { ?>
                 <?php
-                $days_left = $row['days_left'];
-                $id = $row["id"];
-                $fecha = $row["fecha"];
-                $descripcion = $row["descripcion"];
-                $titulo = $row['titulo'];
-                $id = $row["id"];
+                $consulta = "select id, fecha, descripcion, titulo, (DATEDIFF(fecha, CURRENT_DATE)) as days_left from eventos ORDER BY fecha";
+                $resultado = mysqli_query($conexion, $consulta);
 
-                $day_left_class = $days_left == 0 ? "" : ($days_left >= 1 ? "text-success" : "text-danger");
-                $day_left_text = $days_left == 0 ? "Hoy" : ($days_left == 1 ? "Mañana" : $days_left);
+                // require "view\partials\modules\sidebar\index.php";
                 ?>
 
+                <div class="createButtonContainer border bg-dark text-light p-20">
+                    <h3>Agregar eventos</h3>
+                    <?php require "view\partials\kcalendar\create_event_form.php"; ?>
+                </div>
 
-                <?php if ($days_left > -365) { ?>
+                <?php while ($row = mysqli_fetch_assoc($resultado)) { ?>
+                    <?php
+                    $days_left = $row['days_left'];
+                    $id = $row["id"];
+                    $fecha = $row["fecha"];
+                    $descripcion = $row["descripcion"];
+                    $titulo = $row['titulo'];
+                    $id = $row["id"];
 
-                    <tr>
-                        <th>
-                            <center>
-                                <strong class='<?= $day_left_class ?>'><?= $day_left_text  ?></strong>
-                            </center>
-                        </th>
-                        <th><?= $fecha ?></th>
-                        <th><?= $descripcion ?></th>
-                        <th><?= $titulo ?></th>
-                        <th>
-                            <!-- <a class="btn btn-primary" href="view/partials/modules/databases/insert/update_events.php?id=<?= $id ?>">
-                                <span class="material-symbols-outlined">
-                                    edit
-                                </span>
-                            </a> -->
-                            <?php require "view\partials\kcalendar\update_event_form.php"; ?>
-                        </th>
-
-                        <th>
-                            <?php //require "view\partials\kcalendar\delete_event_form.php"
-                            ?>
-                            <a class="btn btn-danger" href="view/partials/modules/databases/insert/delete_events.php?id=<?= $id ?>">
-                                <span class="material-symbols-outlined">
-                                    delete
-                                </span>
-                            </a>
-                        </th>
-                    </tr>
-
-                <?php } ?>
-            <?php  } ?>
+                    $day_left_class = $days_left == 0 ? "" : ($days_left >= 1 ? "text-success" : "text-danger");
+                    $day_left_text = $days_left == 0 ? "Hoy" : ($days_left == 1 ? "Mañana" : $days_left);
+                    ?>
 
 
-        </table>
+                    <?php if ($days_left > -365) { ?>
+
+                        <tr>
+                            <th>
+                                <center>
+                                    <strong class='<?= $day_left_class ?>'><?= $day_left_text  ?></strong>
+                                </center>
+                            </th>
+                            <th><?= $fecha ?></th>
+                            <th><?= $descripcion ?></th>
+                            <th><?= $titulo ?></th>
+                            <th>
+                                <!-- <a class="btn btn-primary" href="view/partials/modules/databases/insert/update_events.php?id=<?= $id ?>">
+                                    <span class="material-symbols-outlined">
+                                        edit
+                                    </span>
+                                </a> -->
+                                <?php require "view\partials\kcalendar\update_event_form.php"; ?>
+                            </th>
+
+                            <th>
+                                <?php //require "view\partials\kcalendar\delete_event_form.php"
+                                ?>
+                                <a class="btn btn-danger" href="view/partials/modules/databases/insert/delete_events.php?id=<?= $id ?>">
+                                    <span class="material-symbols-outlined">
+                                        delete
+                                    </span>
+                                </a>
+                            </th>
+                        </tr>
+
+                    <?php } ?>
+                <?php  } ?>
+
+
+            </table>
+        </div>
     </center>
 </body>
 

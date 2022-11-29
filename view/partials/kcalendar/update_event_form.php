@@ -1,3 +1,19 @@
+<?php
+    // require('../conexion.php');
+
+    // $fecha = $_POST["fecha"];
+    // $hora = $_POST["hora"];
+    // $descripcion = $_POST["descripcion"];
+    // $titulo = $_POST["select"];
+
+    // // $query = "INSERT INTO eventos (fecha, descripcion, titulo)
+    // // VALUES ('$fecha', '$descripcion', '$titulo')";
+    // //$resultado = mysqli_query($conexion, $query);
+
+    // header("Location: http://localhost/index.php?p=/modules/databases/kcalendar");
+    // // index.php
+?>
+
 <!-- Button trigger modal -->
 <button type="button text-dark" class="btn btn-primary" data-toggle="modal" data-target="#update_event">
   <span class="material-symbols-outlined">
