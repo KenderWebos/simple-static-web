@@ -20,7 +20,7 @@ $personal = true;
     echo "<h1>kCalendar</h1>";
     echo "<hr>";
 
-    require "view\partials\kcalendar\add_event.php";
+    require "view\partials\kcalendar\create_event_form.php";
 
     echo "<table class='table table-striped table-hover' style='width:50%; height:250px'>";
     echo "<thead>
