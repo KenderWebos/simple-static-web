@@ -24,18 +24,18 @@ $personal = true;
 <body>
     <center>
         <h1>kCalendar</h1>
-        <h3>ACTUALIZAR EVENTO</h3>
+        <h3>Crear</h3>
         <form class="p-4 m-4 col-5" action="view/partials/modules/databases/insert/insert_events.php" method="post">
           <input name="descripcion" type="text" placeholder="DESCRIPCION" autocomplete="off">
           <br>
           <input name="fecha" type="date" placeholder="FECHA">
           <br>
           <select class="custom-select" name="select">
-            <option value="Contabilidad">Contabilidad</option>
-            <option value="Economia">Economia</option>
-            <option value="Comunicacion de datos">Comunicacion de datos</option>
-            <option value="Taller de ingenieria de software">Taller de ingenieria de software</option>
-            <option value="Arquitectura de computadores">Arquitectura de computadores</option>
+            <option value="termodinamica">termodinamica</option>
+            <option value="ingenieria economica">ingenieria economica</option>
+            <option value="TIS 2">TIS 2</option>
+            <option value="sistemas operativos">sistemas operativos</option>
+            <option value="topicos de investigacion">topicos de investigacion</option>
             <option value="Personal" selected>Personal</option>
           </select>
 
@@ -60,11 +60,6 @@ $personal = true;
                 // require "view\partials\modules\sidebar\index.php";
                 ?>
 
-                <div class="createButtonContainer border bg-dark text-light p-20">
-                    <h3>Agregar eventos</h3>
-                    <?php require "view\partials\kcalendar\create_event_form.php"; ?>
-                </div>
-
                 <?php while ($row = mysqli_fetch_assoc($resultado)) { ?>
                     <?php
                     $days_left = $row['days_left'];
@@ -79,7 +74,7 @@ $personal = true;
                     ?>
 
 
-                    <?php if ($days_left > -365) { ?>
+                    <?php if ($days_left > -30) { ?>
 
                         <tr>
                             <th>
